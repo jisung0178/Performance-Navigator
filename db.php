@@ -3,8 +3,12 @@
 <script src="tMapApi.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <?php
-$taxi_db = mysql_connect("localhost", "root", "root");
-mysql_select_db("taxi_db", $taxi_db);
+//     $HostName = localhost
+//     SQL UserID = y2831mi (호스팅 신청 ID)
+//     Password = (호스팅 신청 시 입력하신 비밀번호)
+//     DB Name = y2831mi (호스팅 신청 ID)
+$taxi_db = mysql_connect("localhost", "y2831mi", "tjdgofl52","y2831mi");
+mysql_select_db("y2831mi", $taxi_db);
 
 function delete_db() {
     $query = "delete from play";
